@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/barrar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@color/oranje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_marginEnd="100dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:contentDescription="@string/settings"
+            android:src="@drawable/ic_settings" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:contentDescription="@string/notificacion"
+            android:src="@drawable/ic_notification" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:contentDescription="@string/salir"
+            android:src="@drawable/ic_salir" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_comida_agua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/barrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="100dp">
+
+        <!-- Contenedor de comida -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/foto_de_comida"
+                android:src="@drawable/comida" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_margin="20dp"
+                >
+
+                <Button
+                    android:id="@+id/mas_comida"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="@string/s"
+                    style="@style/Widget.Material3.Button.Icon"
+                    app:icon="@drawable/ic_sumador"
+                    android:backgroundTint="@color/red"
+                     />
+
+                <TextView
+                    android:id="@+id/texto_kg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/_0_kg"
+                    android:background="@color/darkred"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/chakrapech"
+                    android:layout_marginHorizontal="10dp" />
+
+                <Button
+                    android:id="@+id/menos_comida"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="@string/s"
+                    style="@style/Widget.Material3.Button.Icon"
+                    app:icon="@drawable/ic_restador"
+                    android:backgroundTint="@color/red"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Contenedor de agua -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/foto_de_agua"
+                android:src="@drawable/agua" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_margin="20dp"
+                >
+
+                <Button
+                    android:id="@+id/mas_agua"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="@string/s"
+                    style="@style/Widget.Material3.Button.Icon"
+                    app:icon="@drawable/ic_sumador"
+                    android:backgroundTint="@color/red"
+                    />
+
+                <TextView
+                    android:id="@+id/texto_lt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/_0_lt"
+                    android:background="@color/darkred"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/chakrapech"
+                    android:layout_marginHorizontal="10dp" />
+
+                <Button
+                    android:id="@+id/menos_agua"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="@string/s"
+                    style="@style/Widget.Material3.Button.Icon"
+                    app:icon="@drawable/ic_restador"
+                    android:backgroundTint="@color/red"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/layout_comida_agua"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/btn_automatico"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/chakrapech"
+            android:text="@string/autom_tico"
+            android:backgroundTint="@color/red"
+            />
+
+        <Button
+            android:id="@+id/btn_manual"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="40dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/chakrapech"
+            android:text="@string/manual"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/red"
+            />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/texto_hora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:hint="@string/cambiar_hora"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_botones">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:fontFamily="@font/chakrapech"
+            android:background="@color/oranje"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="120dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/chakrapech"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:text="@string/volver"
+        style="@style/Widget.Material3.Button.Icon"
+        android:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto_hora"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

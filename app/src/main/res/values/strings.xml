@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">PawMeal</string>
+    <string name="comida">Comida</string>
+    <string name="foto_de_comida">Foto de comida</string>
+    <string name="ver">Ver</string>
+    <string name="foto_de_agua">Foto de agua</string>
+    <string name="agua">Agua</string>
+    <string name="kilogramos_actuales_1kg">Kilogramos actuales: 1kg</string>
+    <string name="veces_rellenado_hoy_1">Veces rellenado hoy: 1</string>
+    <string name="volver">Volver</string>
+    <string name="llenar_comida">Llenar comida</string>
+    <string name="estado_lleno">Estado: Lleno</string>
+    <string name="litros_actuales_0_1">Litros actuales: 0,1</string>
+    <string name="veces_rellenado_hoy_0">Veces rellenado hoy: 0</string>
+    <string name="estado_vacio">Estado: vacio</string>
+    <string name="llenar_agua">Llenar agua</string>
+    <string name="logo">Logo</string>
+    <string name="settings">Settings</string>
+    <string name="notificacion">Notificacion</string>
+    <string name="salir">Salir</string>
+    <string name="_0_kg">0 KG</string>
+    <string name="_0_lt">0 LT</string>
+    <string name="cambiar_hora">Cambiar hora</string>
+    <string name="autom_tico">Automático</string>
+    <string name="manual">Manual</string>
+    <string name="hora_1">11:00 AM</string>
+    <string name="fecha_1">05/10/24 10:00 PM</string>
+    <string name="agua_rellenada">Agua rellenada</string>
+    <string name="comida_rellenada">Comida rellenada</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="fecha_2">05/10/24 7:00 PM</string>
+    <string name="fecha_3">04/10/24 9:00 PM</string>
+    <string name="fecha_4">04/10/24 8:30 PM</string>
+    <string name="fecha_6">04/10/24 7:00 AM</string>
+    <string name="fecha_5">04/10/24 10:00 AM</string>
+    <string name="s">s</string>
+</resources>

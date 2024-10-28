@@ -27,31 +27,37 @@
             android:src="@drawable/logo" />
 
         <ImageView
+            android:id="@+id/iconoConfig"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:layout_marginHorizontal="10dp"
+            android:src="@drawable/ic_settings"
             android:contentDescription="@string/icono_configuracion"
-            android:src="@drawable/ic_settings" />
+            />
 
         <ImageView
+            android:id="@+id/iconoNoti"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:layout_marginHorizontal="10dp"
+            android:src="@drawable/ic_notification"
             android:contentDescription="@string/icono_notification"
-            android:src="@drawable/ic_notification" />
+            />
 
         <ImageView
+            android:id="@+id/iconoSalir"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:layout_marginHorizontal="10dp"
+            android:src="@drawable/ic_salir"
             android:contentDescription="@string/icono_salir"
-            android:src="@drawable/ic_salir" />
+            />
     </LinearLayout>
 
     <LinearLayout

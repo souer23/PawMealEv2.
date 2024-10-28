@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                 // Validación de las credenciales
                 if (usuarioIngresado == "usuario" && contraseñaIngresada == "1234") {
                     // Inicio de sesión exitoso, navegar a vista_principal
-                    val intent = Intent(this, vistaPrincipal::class.java)
+                    val intent = Intent(this, VistaPrincipal::class.java)
                     startActivity(intent)
                 } else {
                     // Credenciales incorrectas, mostrar notificación

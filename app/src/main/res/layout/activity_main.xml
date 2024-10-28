@@ -8,136 +8,87 @@
     android:background="@color/yellow"
     tools:context=".MainActivity">
 
-
-    <!-- Barra  -->
     <LinearLayout
-        android:id="@+id/barrar"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal"
-        android:background="@color/oranje"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borde_narajo_inicio_sesion"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        android:layout_marginHorizontal="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:layout_marginEnd="100dp"
-            android:src="@drawable/logo" />
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="10dp"
-            android:src="@drawable/ic_settings" />
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="10dp"
-            android:src="@drawable/ic_notification" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inicio_de_sesi_n"
+            android:textStyle="bold"
+            android:textSize="38sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:fontFamily="@font/chakrapech"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:hint="@string/ingresar_nombre_de_usuario"
+            >
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="10dp"
-            android:src="@drawable/ic_salir" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/ingresar_contrase_a"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etContraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnIniciarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="120dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/chakrapech"
+            android:textSize="17sp"
+            android:text="@string/iniciar_sesi_n"
+            style="@style/Widget.Material3.Button.Icon"
+            android:backgroundTint="@color/red"
+            />
+
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/comida"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/borde"
-        android:fontFamily="@font/chakrapech"
-        android:gravity="center"
-        android:padding="10dp"
-        android:textSize="18sp"
-        android:textColor="@color/white"
-        android:layout_marginTop="30dp"
-        android:layout_marginHorizontal="100dp"
-        android:text="@string/comida"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/barrar"
-        />
-
-    <ImageView
-        android:id="@+id/imagenComida"
-        android:layout_width="180dp"
-        android:layout_height="160dp"
-        android:src="@drawable/comida"
-        android:contentDescription="@string/foto_de_comida"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@id/comida"/>
-
-    <Button
-        android:id="@+id/botonVer1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginHorizontal="120dp"
-        android:fontFamily="@font/chakrapech"
-        android:textSize="17sp"
-        android:text="@string/ver"
-        style="@style/Widget.Material3.Button.Icon"
-        android:backgroundTint="@color/red"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imagenComida"
-        />
-
-    <TextView
-        android:id="@+id/agua"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/borde"
-        android:fontFamily="@font/chakrapech"
-        android:gravity="center"
-        android:padding="10dp"
-        android:textSize="18sp"
-        android:textColor="@color/white"
-        android:layout_marginTop="30dp"
-        android:layout_marginHorizontal="100dp"
-        android:text="@string/agua"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/botonVer1"
-        />
-
-    <ImageView
-        android:id="@+id/imagenAgua"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:src="@drawable/agua"
-        android:contentDescription="@string/foto_de_agua"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@id/agua"/>
-
-    <Button
-        android:id="@+id/botonVer2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="120dp"
-        android:fontFamily="@font/chakrapech"
-        android:textSize="17sp"
-        android:text="@string/ver"
-        style="@style/Widget.Material3.Button.Icon"
-        android:backgroundTint="@color/red"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imagenAgua"
-        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

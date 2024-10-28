@@ -34,4 +34,11 @@
     <string name="fecha_6">04/10/24 7:00 AM</string>
     <string name="fecha_5">04/10/24 10:00 AM</string>
     <string name="s">s</string>
+    <string name="icono_configuracion">Icono configuracion</string>
+    <string name="icono_notification">Icono notification</string>
+    <string name="icono_salir">Icono salir</string>
+    <string name="inicio_de_sesi_n">Inicio de sesión</string>
+    <string name="ingresar_nombre_de_usuario">Ingresar nombre de usuario</string>
+    <string name="ingresar_contrase_a">Ingresar contraseña</string>
+    <string name="iniciar_sesi_n">Iniciar Sesión</string>
 </resources>

@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/vista_notificacion"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/yellow"
@@ -24,7 +24,9 @@
             android:layout_weight="3"
             android:layout_marginEnd="100dp"
             android:contentDescription="@string/logo"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logo"
+
+            />
 
         <ImageView
             android:layout_width="0dp"
@@ -32,7 +34,7 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:layout_marginHorizontal="10dp"
-            android:contentDescription="@string/settings"
+            android:contentDescription="@string/icono_configuracion"
             android:src="@drawable/ic_settings" />
 
         <ImageView
@@ -41,7 +43,7 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:layout_marginHorizontal="10dp"
-            android:contentDescription="@string/notificacion"
+            android:contentDescription="@string/icono_notification"
             android:src="@drawable/ic_notification" />
 
         <ImageView
@@ -50,7 +52,7 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:layout_marginHorizontal="10dp"
-            android:contentDescription="@string/salir"
+            android:contentDescription="@string/icono_salir"
             android:src="@drawable/ic_salir" />
     </LinearLayout>
 

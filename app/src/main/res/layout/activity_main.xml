@@ -11,84 +11,88 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/borde_narajo_inicio_sesion"
+        android:background="@drawable/borde_oranje"
         android:orientation="vertical"
-        android:layout_marginTop="120dp"
-        android:layout_marginHorizontal="10dp"
+        android:paddingVertical="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pawmeal"
+            android:textStyle="bold"
+            android:textSize="48sp"
+            android:layout_marginHorizontal="40dp"
+            android:background="@color/oranje"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:fontFamily="@font/chakrapech"
+            android:layout_marginBottom="10dp"/>
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="20dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
             android:contentDescription="@string/logo"
-            android:src="@drawable/logo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:src="@drawable/logo"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/inicio_de_sesi_n"
             android:textStyle="bold"
-            android:textSize="38sp"
+            android:textSize="34sp"
             android:textColor="@color/black"
             android:gravity="center"
-            android:fontFamily="@font/chakrapech"
-            />
+            android:layout_marginVertical="15dp"
+            android:fontFamily="@font/chakrapech"/>
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tilUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="15dp"
             android:hint="@string/ingresar_nombre_de_usuario"
-            >
+            app:boxBackgroundColor="@color/blue_toolight">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etUsuario"
+                android:fontFamily="@font/chakrapech"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                />
+                android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tilContraseña"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
             android:hint="@string/ingresar_contrase_a"
-            >
+            app:boxBackgroundColor="@color/blue_toolight">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etContraseña"
+                android:fontFamily="@font/chakrapech"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                />
+                android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
-
 
         <Button
             android:id="@+id/btnIniciarSesion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="120dp"
+            android:layout_marginHorizontal="100dp"
             android:layout_marginTop="15dp"
-            android:layout_marginBottom="20dp"
+            android:textSize="16sp"
             android:fontFamily="@font/chakrapech"
-            android:textSize="17sp"
             android:text="@string/iniciar_sesi_n"
             style="@style/Widget.Material3.Button.Icon"
-            android:backgroundTint="@color/red"
-            />
-
+            android:backgroundTint="@color/redR"/>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,11 +10,11 @@ import android.widget.ImageView
 import android.widget.Toast
 import com.google.android.material.textfield.TextInputEditText
 
-class VistaPrincipal : AppCompatActivity() {
+class VistaComida : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.vista_principal)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.vista_principal)) { v, insets ->
+        setContentView(R.layout.vista_comida)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.vista_comida)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
@@ -22,8 +22,13 @@ class VistaPrincipal : AppCompatActivity() {
         val config: ImageView = findViewById(R.id.iconoConfig)
         val noti: ImageView = findViewById(R.id.iconoNoti)
         val salir: ImageView = findViewById(R.id.iconoSalir)
-        val verAgua: Button = findViewById(R.id.botonVer1)
-        val verComida: Button = findViewById(R.id.botonVer2)
+        val volver: Button = findViewById(R.id.volver)
+
+        volver.setOnClickListener {
+            val intent = Intent(this, VistaPrincipal::class.java)
+            startActivity(intent)
+        }
+
         config.setOnClickListener {
             val intent = Intent(this, VistaConfiguracion::class.java)
             startActivity(intent)
@@ -36,14 +41,6 @@ class VistaPrincipal : AppCompatActivity() {
 
         salir.setOnClickListener {
             val intent = Intent(this,MainActivity::class.java)
-            startActivity(intent)
-        }
-        verAgua.setOnClickListener {
-            val intent = Intent(this,VistaAgua::class.java)
-            startActivity(intent)
-        }
-        verComida.setOnClickListener {
-            val intent = Intent(this,VistaComida::class.java)
             startActivity(intent)
         }
     }

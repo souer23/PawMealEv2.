@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/yellow"
-    tools:context=".MainActivity">
+    tools:context=".VistaAgua">
 
 
     <LinearLayout
@@ -127,7 +127,7 @@
 
 
     <Button
-        android:id="@+id/botonVer1"
+        android:id="@+id/llenarAgua"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -142,12 +142,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/estado"
         />
-
     <Button
-        android:id="@+id/botonVer2"
+        android:id="@+id/volver"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="120dp"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/chakrapech"
         android:textSize="17sp"
         android:textColor="@color/white"
@@ -156,7 +156,8 @@
         android:backgroundTint="@color/red"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/botonVer1"
+        app:layout_constraintTop_toBottomOf="@id/llenarAgua"
         />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

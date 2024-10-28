@@ -15,6 +15,10 @@
         <activity
             android:name=".VistaPrincipal"
             android:exported="false" />
+        <activity android:name=".VistaConfiguracion" />
+        <activity android:name=".VistaNotificacion" />
+        <activity android:name=".VistaAgua" />
+        <activity android:name=".VistaComida" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

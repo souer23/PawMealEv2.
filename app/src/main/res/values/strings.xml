@@ -41,4 +41,7 @@
     <string name="ingresar_nombre_de_usuario">Ingresar nombre de usuario</string>
     <string name="ingresar_contrase_a">Ingresar contraseña</string>
     <string name="iniciar_sesi_n">Iniciar Sesión</string>
+    <string name="volver_a_lista_de_mascotas">Volver a lista de mascotas</string>
+    <string name="agregar_mascota">Agregar Mascota</string>
+    <string name="pawmeal">PawMeal</string>
 </resources>

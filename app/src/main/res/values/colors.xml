@@ -8,4 +8,9 @@
     <color name="oranje">#FF9F68</color>
     <color name="green">#4CAF50</color>
     <color name="redR">#FF0000</color>
+    <color name="blue_light">#E3F2FD</color>
+    <color name="gray_dark">#616161</color>
+    <color name="green_dark">#388E3C</color>
+    <color name="blue_toolight">#B262D6F8</color>
+
 </resources>

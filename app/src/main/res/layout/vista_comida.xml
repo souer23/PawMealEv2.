@@ -10,11 +10,12 @@
 
 
     <LinearLayout
-        android:id="@+id/barra"
+        android:id="@+id/barrar"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:orientation="horizontal"
-        android:background="@color/oranje"
+        android:paddingVertical="10dp"
+        android:background="@color/blue_toolight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -27,28 +28,6 @@
             android:src="@drawable/logo"
             android:contentDescription="@string/logo"
             />
-        <ImageView
-            android:id="@+id/iconoConfig"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="10dp"
-            android:src="@drawable/ic_settings"
-            android:contentDescription="@string/icono_configuracion"
-            />
-
-        <ImageView
-            android:id="@+id/iconoNoti"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="10dp"
-            android:src="@drawable/ic_notification"
-            android:contentDescription="@string/icono_notification"
-            />
-
         <ImageView
             android:id="@+id/iconoSalir"
             android:layout_width="0dp"
@@ -70,7 +49,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="40dp"
-        app:layout_constraintTop_toBottomOf="@id/barra"/>
+        app:layout_constraintTop_toBottomOf="@id/barrar"/>
 
     <TextView
         android:id="@+id/kilogramosComida"
@@ -127,37 +106,34 @@
 
 
     <Button
-        android:id="@+id/botonVer1"
+        android:id="@+id/btnLlenarComida"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_marginHorizontal="120dp"
         android:fontFamily="@font/chakrapech"
-        android:textSize="17sp"
+        android:textSize="18sp"
         android:textColor="@color/white"
-        android:text="@string/llenar_comida"
+        android:text="@string/llenar_agua"
         style="@style/Widget.Material3.Button.Icon"
-        android:backgroundTint="@color/red"
+        android:backgroundTint="@color/redR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/estado"
         />
-
     <Button
-        android:id="@+id/volver"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="120dp"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/chakrapech"
-        android:textSize="17sp"
-        android:textColor="@color/white"
-        android:text="@string/volver"
+        android:id="@+id/btnVolver"
         style="@style/Widget.Material3.Button.Icon"
-        android:backgroundTint="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/redR"
+        android:fontFamily="@font/chakrapech"
+        android:paddingHorizontal="35dp"
+        android:text="@string/volver"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/botonVer1"
-        />
+        app:layout_constraintTop_toBottomOf="@id/btnLlenarComida" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

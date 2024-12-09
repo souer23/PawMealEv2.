@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PawMeal"
         tools:targetApi="31">
+        <activity android:name=".Vistas.AdminMascotaActivity" />
+        <activity
+            android:name=".RegistrarActivity"
+            android:exported="false" />
         <activity
             android:name=".VistaPrincipal"
             android:exported="false" />

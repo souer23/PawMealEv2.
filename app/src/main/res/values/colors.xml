@@ -7,10 +7,14 @@
     <color name="darkred">#7C203A</color>
     <color name="oranje">#FF9F68</color>
     <color name="green">#4CAF50</color>
-    <color name="redR">#FF0000</color>
-    <color name="blue_light">#E3F2FD</color>
+    <color name="redR">#1863E4</color>
+    <color name="blue_light">#BBDEF8</color>
     <color name="gray_dark">#616161</color>
     <color name="green_dark">#388E3C</color>
-    <color name="blue_toolight">#B262D6F8</color>
+    <color name="blue_toolight">#A4EAFF</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorSecondary">#03DAC5</color>
+    <color name="colorItemSelected">#FF5722</color>
+    <color name="colorItemUnselected">#BA3A3A</color>
 
 </resources>

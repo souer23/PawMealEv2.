@@ -8,40 +8,54 @@ import android.content.Intent
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
+import com.example.pawmeal.Vistas.AdminMascotaActivity
+import com.example.pawmeal.databinding.ActivityAdminMascotaBinding
+import com.example.pawmeal.databinding.VistaAguaBinding
+import com.example.pawmeal.databinding.VistaConfiguracionBinding
 import com.google.android.material.textfield.TextInputEditText
+import com.google.firebase.Firebase
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.auth
 
 class VistaConfiguracion : AppCompatActivity() {
+
+    //Configuracion de viewBinding
+    private lateinit var binding: VistaConfiguracionBinding
+    // iniciar firebase
+    private lateinit var auth : FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.vista_configuracion)
+        //Inicializar viewBinding
+        binding = VistaConfiguracionBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.vista_configuracion)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val config: ImageView = findViewById(R.id.iconoConfig)
-        val noti: ImageView = findViewById(R.id.iconoNoti)
-        val salir: ImageView = findViewById(R.id.iconoSalir)
-        val volver: Button = findViewById(R.id.volver)
+        //definir e inicializar firebase auth
+        auth = Firebase.auth
 
-        volver.setOnClickListener {
-            val intent = Intent(this, VistaPrincipal::class.java)
+        binding.iconoSalir.setOnClickListener{
+            val intent= Intent(this, MainActivity::class.java)
             startActivity(intent)
+            signOut() //Funcion cerrar sesion
         }
-
-        config.setOnClickListener {
-            val intent = Intent(this, VistaConfiguracion::class.java)
-            startActivity(intent)
+        //programar vista para volver a Adminitrador de mascota
+        binding.btnVolver.setOnClickListener{
+            try {
+                val intent= Intent(this, AdminMascotaActivity::class.java)
+                startActivity(intent)
+            }
+            catch (e:Exception){
+                Toast.makeText(this, e.toString(),Toast.LENGTH_SHORT).show()
+            }
         }
-
-        noti.setOnClickListener {
-            val intent = Intent(this, VistaNotificacion::class.java)
-            startActivity(intent)
-        }
-
-        salir.setOnClickListener {
-            val intent = Intent(this,MainActivity::class.java)
-            startActivity(intent)
-        }
+    }
+    private fun signOut() {
+        Firebase.auth.signOut()
+        Toast.makeText(this, "Sesion cerrada", Toast.LENGTH_SHORT).show()
+        finish()
     }
 }

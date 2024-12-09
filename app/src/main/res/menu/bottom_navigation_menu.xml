@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_1"
+        android:title="Ver Mascotas"
+        android:enabled="true"
+        android:icon="@drawable/ic_ver_mas"
+        />
+    <item
+        android:id="@+id/item_2"
+        android:title="Registrar Mascota"
+        android:enabled="true"
+        android:icon="@drawable/ic_reg_mas"
+        />
+    <item
+        android:id="@+id/item_3"
+        android:title="Logout"
+        android:enabled="false"
+        android:visible="false"
+        android:icon="@drawable/ic_logout"
+        />
+
+</menu>

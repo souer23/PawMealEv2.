@@ -13,7 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:orientation="horizontal"
-        android:background="@color/oranje"
+        android:paddingVertical="10dp"
+        android:background="@color/blue_toolight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -23,31 +24,9 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:layout_marginEnd="100dp"
+            android:src="@drawable/logo"
             android:contentDescription="@string/logo"
-            android:src="@drawable/logo" />
-
-        <ImageView
-            android:id="@+id/iconoConfig"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="10dp"
-            android:src="@drawable/ic_settings"
-            android:contentDescription="@string/icono_configuracion"
             />
-
-        <ImageView
-            android:id="@+id/iconoNoti"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="10dp"
-            android:src="@drawable/ic_notification"
-            android:contentDescription="@string/icono_notification"
-            />
-
         <ImageView
             android:id="@+id/iconoSalir"
             android:layout_width="0dp"
@@ -112,7 +91,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/_0_kg"
-                    android:background="@color/darkred"
+                    android:background="@color/redR"
                     android:textColor="@color/white"
                     android:fontFamily="@font/chakrapech"
                     android:layout_marginHorizontal="10dp" />
@@ -170,7 +149,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/_0_lt"
-                    android:background="@color/darkred"
+                    android:background="@color/redR"
                     android:textColor="@color/white"
                     android:fontFamily="@font/chakrapech"
                     android:layout_marginHorizontal="10dp" />
@@ -206,7 +185,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/chakrapech"
             android:text="@string/autom_tico"
-            android:backgroundTint="@color/red"
+            android:backgroundTint="@color/redR"
             />
 
         <Button
@@ -218,7 +197,7 @@
             android:fontFamily="@font/chakrapech"
             android:text="@string/manual"
             android:layout_marginStart="20dp"
-            android:backgroundTint="@color/red"
+            android:backgroundTint="@color/redR"
             />
     </LinearLayout>
 
@@ -250,20 +229,18 @@
 
 
     <Button
-        android:id="@+id/volver"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="120dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/chakrapech"
-        android:textSize="17sp"
-        android:textColor="@color/white"
-        android:text="@string/volver"
+        android:id="@+id/btnVolver"
         style="@style/Widget.Material3.Button.Icon"
-        android:backgroundTint="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/redR"
+        android:fontFamily="@font/chakrapech"
+        android:paddingHorizontal="35dp"
+        android:text="@string/volver"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/texto_hora"
-        />
+        app:layout_constraintTop_toBottomOf="@id/texto_hora" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

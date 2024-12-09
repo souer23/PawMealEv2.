@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "155665696878",
+    "project_id": "pawmeal-f5f5c",
+    "storage_bucket": "pawmeal-f5f5c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155665696878:android:cbfae79cfc7198576dfe7f",
+        "android_client_info": {
+          "package_name": "com.example.pawmeal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNZCt5f9AA9ySplNhlZRUchtGW6ztMHJc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

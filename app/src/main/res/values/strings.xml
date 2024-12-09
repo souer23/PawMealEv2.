@@ -44,4 +44,27 @@
     <string name="volver_a_lista_de_mascotas">Volver a lista de mascotas</string>
     <string name="agregar_mascota">Agregar Mascota</string>
     <string name="pawmeal">PawMeal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="correo_electronico">Correo Electronico</string>
+    <string name="repetir_contrase_a">Repetir Contraseña</string>
+    <string name="registro">Registro</string>
+    <string name="registrar_correo">Registrar correo</string>
+    <string name="no_est_s_registrado_registrate">¿No estás registrado? Registrate</string>
+    <string name="registrar_mascota">Registrar Mascota</string>
+    <string name="nombre">Nombre</string>
+    <string name="sexo">Sexo</string>
+    <string name="raza">Raza</string>
+    <string name="crear_mascota">Crear mascota</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="administrar_mascota">Administrar Mascota</string>
+    <string name="listado_de_mascotas">Listado de mascotas</string>
+    <string name="ver_comida">Ver Comida</string>
+    <string name="ver_agua">Ver Agua</string>
+    <string name="configuracion_agua_y_comida">Configuracion Agua y comida</string>
+    <string-array name="sexo_opciones">
+        <item>Macho</item>
+        <item>Hembra</item>
+    </string-array>
+
 </resources>
